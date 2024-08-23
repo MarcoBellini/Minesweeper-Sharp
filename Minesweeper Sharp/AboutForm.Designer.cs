@@ -33,7 +33,7 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            linkLabel1 = new LinkLabel();
+            Github_Link_label = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -77,22 +77,23 @@
             label2.TabIndex = 3;
             label2.Text = "Ver. 1  developed by Marco Bellini";
             // 
-            // linkLabel1
+            // Github_Link_label
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(135, 96);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(83, 15);
-            linkLabel1.TabIndex = 4;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Github Project";
+            Github_Link_label.AutoSize = true;
+            Github_Link_label.Location = new Point(135, 96);
+            Github_Link_label.Name = "Github_Link_label";
+            Github_Link_label.Size = new Size(83, 15);
+            Github_Link_label.TabIndex = 4;
+            Github_Link_label.TabStop = true;
+            Github_Link_label.Text = "Github Project";
+            Github_Link_label.LinkClicked += Github_Link_label_LinkClicked;
             // 
             // AboutForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(313, 129);
-            Controls.Add(linkLabel1);
+            Controls.Add(Github_Link_label);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -116,6 +117,6 @@
         private PictureBox pictureBox1;
         private Label label1;
         private Label label2;
-        private LinkLabel linkLabel1;
+        private LinkLabel Github_Link_label;
     }
 }
